@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises SYSTEM "paises.dtd">
+<paises>
+<pais id="NO">
+<nombre>Noruega</nombre>
+<continente>Europa</continente>
+<capital>Oslo</capital>
+<superficie>385.207km</superficie>
+<poblacion>5.408millones</poblacion>
+<ciudades>
+<ciudad>Oslo</ciudad>
+<ciudad>Bergen</ciudad>
+<ciudad>Tromso</ciudad>
+<ciudad>Lillehammer</ciudad>
+</ciudades>
+<lenguas>
+<lengua>Noruego</lengua>
+<lengua>Sami</lengua>
+</lenguas>
+<religiones>
+<religion>Iglesia evangélica luterana de Noruega</religion>
+<religion>Judaísmo</religion>
+<religion>Mormonismo</religion>
+</religiones>
+<moneda>Corona noruega</moneda>
+</pais>
+</paises>

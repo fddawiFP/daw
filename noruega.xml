@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE noruega SYSTEM "noruega.dtd">
+<noruega xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="noruega.xsd">
+  <pais>
+    <nombre>Noruega</nombre>
+    <poblacion>5408000</poblacion>
+    <continente>Europa</continente>
+    <nombre_capital>Oslo</nombre_capital>
+    <coordenadas_gps>
+      <latitud>59.913333</latitud>
+      <longitud>10.738889</longitud>
+    </coordenadas_gps>
+    <fotografias>
+      <nombre>foto1</nombre>
+      <descripcion>Fiordos noruegos</descripcion>
+      <p>
+        <img src="https://www.panavision-tours.es/viajes/fiordos-noruegos/fiordos.jpg" alt="Fiordos noruegos"/>
+      </p>
+    </fotografias>
+  </pais>
+</noruega>

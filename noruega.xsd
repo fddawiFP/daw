@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<xs:element name="nombre" type="xs:string"/>
+<xs:element name="poblacion" type="xs:integer"/>
+<xs:element name="continente" type="xs:string"/>
+<xs:element name="nombre_capital" type="xs:string"/>
+<xs:element name="latitud" type="xs:decimal"/>
+<xs:element name="longitud" type="xs:decimal"/>
+<xs:element name="descripcion" type="xs:string"/>
+
+<xs:element name="pais">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="poblacion" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="continente" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="nombre_capital" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="coordenadas_gps" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="fotografias" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+<xs:element name="coordenadas_gps">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="latitud" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="longitud" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+<xs:element name="fotografias">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="descripcion" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="p" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="img">
+  <xs:complexType>
+    <xs:attribute name="src" type="xs:string" use="required"/>
+    <xs:attribute name="alt" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="p">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="img" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+<xs:element name="noruega">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pais" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

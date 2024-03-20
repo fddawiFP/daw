@@ -1,0 +1,16 @@
+<!ELEMENT noruega (pais)>
+<!ELEMENT pais (nombre, poblacion, continente, nombre_capital, coordenadas_gps, fotografias_noruega)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT continente (#PCDATA)>
+<!ELEMENT nombre_capital (#PCDATA)>
+<!ELEMENT coordenadas_gps (latitud, longitud)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT fotografias_noruega (nombre, descripcion, p)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT p (img)>
+<!ELEMENT img (#PCDATA)>
+<!ATTLIST img
+          alt CDATA #REQUIRED
+          src CDATA #REQUIRED>
